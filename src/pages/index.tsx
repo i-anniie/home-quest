@@ -1,9 +1,20 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import {
+  FeaturedProduct,
+  HeroSection,
+  OfferSection,
+} from "@/components/leadpage";
 import PublicLayout from "@/layouts";
 
-const inter = Inter({ subsets: ["latin"] });
+const Home = () => {
+  return (
+    <PublicLayout>
+      <section className="relative w-full h-full">
+        <HeroSection />
+        <OfferSection />
+        <FeaturedProduct />
+      </section>
+    </PublicLayout>
+  );
+};
 
-export default function Login() {
-  return <section>login</section>;
-}
+export default Home;

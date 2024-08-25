@@ -13,7 +13,7 @@ const CommonBanner = ({ title, image }: any) => {
           {title}
         </h1>
         <div className="flex items-center justify-center gap-2">
-          <Link href="/home">
+          <Link href="/">
             <p className=" cursor-pointer hover:text-theme_light">Home</p>
           </Link>
           <MdKeyboardDoubleArrowRight className="!text-white" />

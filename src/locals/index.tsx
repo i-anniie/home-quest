@@ -7,7 +7,7 @@ import { VscSymbolProperty } from "react-icons/vsc";
 export const navigationData = [
   {
     label: "Home",
-    link: "/home",
+    link: "/",
     icon: <BiHome />,
     isOuterLink: false,
   },
