@@ -5,7 +5,7 @@
 * {
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: #000000 transparent;
+  scrollbar-color: #374151 transparent;
   scroll-behavior: smooth !important;
 }
 ::-webkit-scrollbar {

@@ -26,7 +26,7 @@ const ProfileInfo: React.FC<ProfileInfoProps> = ({
       onMouseEnter={showDropdown}
       onMouseLeave={hideDropdown}
     >
-      <h1 className="w-12 h-12 flex items-center justify-center rounded-full text-slate-950 bg-slate-100 cursor-pointer mb-2">
+      <h1 className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-gray-700 cursor-pointer mb-2">
         {getInitials(`${fullName}` || "User")}
       </h1>
       {isDropdownVisible && (

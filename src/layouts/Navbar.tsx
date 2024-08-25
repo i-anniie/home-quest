@@ -95,7 +95,7 @@ const Navbar = () => {
                   key={curLabel.label}
                   className="tracking-wider cursor-pointer common-transition"
                 >
-                  <h1>{curLabel.label}</h1>
+                  <h1 className="font-semibold">{curLabel.label}</h1>
                 </div>
               ))}
             </div>

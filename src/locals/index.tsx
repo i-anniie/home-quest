@@ -11,24 +11,24 @@ export const navigationData = [
     icon: <BiHome />,
     isOuterLink: false,
   },
-  {
-    label: "About",
-    link: "/about",
-    icon: <BiCommentDetail />,
-    isOuterLink: false,
-  },
+  // {
+  //   label: "About",
+  //   link: "/about",
+  //   icon: <BiCommentDetail />,
+  //   isOuterLink: false,
+  // },
   {
     label: "Properties",
     link: "/properties",
     icon: <BiBuilding />,
     isOuterLink: false,
   },
-  {
-    label: "Contact",
-    link: "/contact",
-    icon: <IoIosContact />,
-    isOuterLink: false,
-  },
+  // {
+  //   label: "Contact",
+  //   link: "/contact",
+  //   icon: <IoIosContact />,
+  //   isOuterLink: false,
+  // },
 ];
 
 export const heroSliderImgSchema = [
