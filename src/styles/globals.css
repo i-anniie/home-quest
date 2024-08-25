@@ -2,32 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #000000 transparent;
+  scroll-behavior: smooth !important;
+}
+::-webkit-scrollbar {
+  width: 0.25em;
+  height: 0.25em;
+}
+::-webkit-scrollbar-thumb {
+  background: #1b4e9b;
+  border-radius: 10em;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto Mono", sans-serif;
+  scroll-behavior: smooth !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .main-container {
+    @apply w-full max-w-[1360px] mx-auto px-4 md:px-6 xl:px-12 2xl:px-6;
+  }
+  .common-transition {
+    @apply transition-all ease-in-out duration-300 !important;
+  }
+  .top-spacing {
+    @apply pt-12 md:pt-16 lg:pt-20 2xl:pt-24;
+  }
+  .bottom-spacing {
+    @apply pb-12 md:pb-16 lg:pb-20 2xl:pb-24;
+  }
+  .container-top {
+    @apply pt-8 md:pt-10 lg:pt-12 2xl:pt-16;
+  }
+  .container-bottom {
+    @apply pb-8 md:pb-10 lg:pb-12 2xl:pb-16;
+  }
+  .nav-btn {
+    @apply bg-secondary hover:bg-gray-800 text-white rounded-sm py-2 px-4;
+  }
+  .btn-primary {
+    @apply bg-white hover:bg-gray-700 text-black hover:text-white border border-gray-700 rounded-sm py-2 px-4;
+  }
+  .btn-secondary {
+    @apply hover:bg-white bg-gray-700 hover:text-black text-white border border-gray-700 rounded-sm py-2 px-4;
   }
 }
