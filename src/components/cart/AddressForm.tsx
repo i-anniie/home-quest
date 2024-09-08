@@ -91,7 +91,6 @@ const Checkout = () => {
   };
 
   return (
-    <PublicLayout>
       <div className="w-full mx-auto p-4 bg-white shadow-md">
         <h2 className="text-xl font-semibold mb-4">Address Details</h2>
         <Formik
@@ -159,7 +158,6 @@ const Checkout = () => {
           )}
         </Formik>
       </div>
-    </PublicLayout>
   );
 };
 
